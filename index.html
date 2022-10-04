@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous" defer></script>
+    <title>Rick y Morty App</title>
+    <script src="js/mains.js" defer></script>
+    <script src="js/renderPesronaje.js" defer></script>
+    <script src="js/botones.js" defer></script>
+</head>
+<body>
+  <div class="container-title">
+    <img src="images/titlerickmorty-removebg-preview-removebg-preview.png" alt="Rick y Morty" class="title-rickYmorty">
+  </div>
+    <!--navbar-->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container-fluid div-nav">
+          <a onclick="gethome()" class="navbar-brand" href="#" id="home">Home</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" onclick="getPersonajeDead(event)"  href="#">Personajes Muertos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="live" href="#"onclick="getPersonajeLive(event)">Personajes Vivos</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Genero de personaje
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown" ac>
+                  <li><a class="dropdown-item nav-link" href="#" id="getMale" onclick="getPersonajeGeneroM(event)">Masculino</a></li>
+                  <hr class="dropdown-divider bg-light">
+                  <li><a class="dropdown-item" href="#" id="getFemale" onclick="getPersonajeGeneroF(event)" >Femenino</a></li>
+                </ul>
+              </li>
+            </ul>    
+            <form class="d-flex col-lg-5">
+              <input class="form-control me-2" type="search" placeholder="Buscar Personaje" id="idBusqueda" aria-label="Search" autocomplete="off">
+              <button class="btn btn-outline-success" type="submit" " onclick="getPersonaje(event)">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    <!--navbar end-->
+    
+    <div class="row" id="contenedorPrincipal" loading="lazy" ></div>
+    <div class="container-paginacion" loading="lazy" >
+      <button onclick="getInicio(event)" class="btn btn-lg paginacion"><i class="fa-solid fa-backward-fast"></i></button>
+      <button onclick="getPaginaAnterior(event)" class="btn btn-lg paginacion"><i class="fa-solid fa-backward-step"></i></button>
+      <button onclick="getPaginaSiguiente(event)" class="btn btn-lg paginacion"><i class="fa-solid fa-forward-step"></i></button>
+      <button onclick="getIFin(event)" class="btn btn-lg paginacion"><i class="fa-solid fa-forward-fast"></i></button>
+    </div>
+</body>
+</html>

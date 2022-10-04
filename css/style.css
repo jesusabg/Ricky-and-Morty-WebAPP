@@ -1,0 +1,188 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html{
+  max-height: 100vh;
+}
+body {
+  padding: 0px 40px;
+  min-width: 330px;
+  background-image: url("/images/galaxia.jpg");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: left;
+  max-height: 100vh;
+  height: 100vh;
+}
+h4{
+    font-weight: bold;
+    height: 56px;
+    font-size: 18px;
+}
+
+img.title-rickYmorty {
+  object-fit: contain;
+}
+
+img#img-personaje {
+  object-fit: cover;
+  border-radius: 20px;
+  width: 100%;
+  height: 100%;
+}
+a#getMale,a#getFemale {
+    border-radius: 15px;
+    width: 90%;
+    height: 100%;
+    margin: 0 auto;
+    text-align: center;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+a#getMale,a#getFemale:hover {
+    text-decoration: overline;
+}
+ul.dropdown-menu.show li {
+    padding: 0;
+}
+
+.status-personaje{
+    border-radius: 5px;
+}
+
+
+
+ul.dropdown-menu.show {
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgb(0 0 0 / 10%);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(49, 49, 49, 0.797);
+    background: rgba(129, 129, 129, 0.709);
+    box-shadow: 0 4px 30px rgb(0 0 0 / 10%);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+nav.navbar.navbar-expand-lg.navbar-dark{
+    margin-top: 0px;
+    min-width: 240px;
+    padding: 20px;
+    font-size: 20px;
+    z-index: 2;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    transition: 0.2s;
+}
+.col-sm-7.col-md-3.col-lg-2.mb-5.card.cardcontainer {
+  min-width: 240px;
+  max-width: 320px;
+  padding: 10px 10px;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(21, 0, 0, 0.3);
+  background: rgba(255, 255, 255, 0.069);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  transition: 0.2s;
+  color: rgb(253, 253, 253);
+  font-weight: 500;
+  font-size: 19px;
+}
+
+.col-sm-7.col-md-3.col-lg-2.mb-5.card.cardcontainer:hover {
+    z-index: 1;
+   transform: scale(1.2);
+   box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+   transition: 0.2s;
+  }
+div#contenedorPrincipal {
+  column-gap: 25px;
+  margin-top: 70px;
+}
+.cardcontainer {
+  min-width: 300px;
+}
+
+div#contenedorPrincipal {
+  display: flex;
+  justify-content: center;
+}
+.origin-personaje{
+    font-size: 18px;
+}
+
+.title-rickYmorty{
+  margin: 0 auto;
+  width: 70%;
+  min-width: 350px;
+  height: 210px;
+  position: absolute;
+  top: 15px;
+}
+
+.container-title{
+  width: 80%;
+  height: 130px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.container-paginacion{
+  width: 80%;
+  margin: 25px auto;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+}
+button.btn.btn-lg.paginacion {
+  margin-bottom: 50px;
+}
+
+.container-paginacion .paginacion{
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(21, 0, 0, 0.3);
+  background: rgba(255, 255, 255, 0.346);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  margin: 5px;
+  color: #fff;
+
+}
+.container-paginacion .paginacion:hover{
+  background-color: #fff;
+}
+.container-paginacion .paginacion:focus{
+  background-color: rgba(243, 239, 239, 0.822);
+}
